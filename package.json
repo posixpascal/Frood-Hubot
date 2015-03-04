@@ -5,6 +5,7 @@
   "author": "Pascal Raszyk <pr@mediatrooper.de>",
   "description": "Yes... I bitch-slap jaeckel. ",
   "dependencies": {
+    "cheerio": "^0.18.0",
     "hubot": "^2.11.1",
     "hubot-business-cat": "^1.1.16",
     "hubot-caniuse": "^1.0.2",
@@ -29,7 +30,8 @@
     "hubot-victory": "^1.2.0",
     "hubot-whatthecommit": "0.0.4",
     "hubot-youtube": "^0.1.2",
-    "lodash": "^3.3.1"
+    "lodash": "^3.3.1",
+    "request": "^2.53.0"
   },
   "engines": {
     "node": "0.10.x"
