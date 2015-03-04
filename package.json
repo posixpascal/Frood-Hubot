@@ -26,6 +26,7 @@
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.2",
     "hubot-slack": "^3.3.0",
+    "hubot-victory": "^1.2.0",
     "hubot-whatthecommit": "0.0.4",
     "hubot-youtube": "^0.1.2"
   },
