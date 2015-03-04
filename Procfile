@@ -1,1 +1,1 @@
-web: bin/hubot -a slack -n Frooderp
+web: bin/hubot --adapter slack
