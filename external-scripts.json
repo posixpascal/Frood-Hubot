@@ -6,8 +6,18 @@
   "hubot-google-translate",
   "hubot-pugme",
   "hubot-maps",
- 
+  "hubot-victory",
+  "hubot-codinglove",
   "hubot-rules",
   "hubot-shipit",
-  "hubot-youtube"
+  "hubot-youtube",
+  "hubot-reaction",
+  "hubot-whatthecommit",
+  "hubot-dinner",
+  "hubot-caniuse",
+  "hubot-flirt",
+  "hubot-business-cat",
+  "hubot-decides",
+  "hubot-fliptable"
+
 ]
