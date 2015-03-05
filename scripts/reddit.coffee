@@ -8,7 +8,8 @@ module.exports = (robot) ->
 			items = body.data.children
 
 			item = msg.random items
-			msg.send "(#{item.title} - (#{item.url}) - ups: #{item.ups} - downs: #{item.downs}"
+			item = item.data
+			msg.send "#{item.title} - (#{item.url}) - ups: #{item.ups} - downs: #{item.downs}"
 
 
 	robot.hear /b0rg/, (msg) ->
