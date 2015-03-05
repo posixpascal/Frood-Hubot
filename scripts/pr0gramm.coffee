@@ -6,7 +6,7 @@ module.exports = (robot) ->
 		.get() (err, res, body) ->
 			body = JSON.parse body
 			r = msg.random body.items
-			msg.send "http://pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
+			msg.send "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
 
 	robot.shouldPost = false
 
