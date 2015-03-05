@@ -14,7 +14,7 @@ module.exports = (robot) ->
 					items.push item
 			r = msg.random items
 			msg.send "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
-
+			msg.shouldPost = false
 	robot.shouldPost = false
 
 	robot.hear /pr0gramm\:(.+)/, (msg) ->
