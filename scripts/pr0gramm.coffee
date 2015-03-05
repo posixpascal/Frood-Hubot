@@ -10,7 +10,7 @@ module.exports = (robot) ->
 			body = JSON.parse body
 			items = []
 			for item in body.items
-				if item.image.indexOf("webm") === -1
+				if item.image.indexOf("webm") == -1
 					items.push item
 			r = msg.random items
 			msg.send "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
