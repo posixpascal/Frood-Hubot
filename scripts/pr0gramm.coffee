@@ -14,7 +14,7 @@ module.exports = (robot) ->
 				if item.image.indexOf("webm") == -1
 					items.push item
 			
-			if typeof msg === "string"
+			if typeof msg == "string"
 				r = items[0]
 				robot.messageRoom msg, "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
 			
