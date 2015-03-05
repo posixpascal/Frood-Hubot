@@ -1,10 +1,10 @@
 cheerio = require 'cheerio'
 
 module.exports = (robot) ->
-	robot.pr0gramm = (msg, boobs) ->
+	robot.pr0gramm = (msg, tag) ->
 		pr0gramm_url = "http://pr0gramm.com/api/items/get?flags=1&promoted=1"
-		if boobs
-			pr0gramm_url = pr0gramm_url + "&tags=boobs"
+		if tag
+			pr0gramm_url = pr0gramm_url + "&tags=#{tag}"
 		robot.http(pr0gramm_url)
 		.get() (err, res, body) ->
 			body = JSON.parse body
@@ -20,8 +20,11 @@ module.exports = (robot) ->
 	robot.hear /(pr0gramm)/, (msg) ->
 		robot.pr0gramm(msg)
 
+	robot.hear /pr0gramm\:(.+)/, (msg) ->
+		robot.pr0gramm(msg,  escape(msg.match[1]))
+
 	robot.hear /(borg)/, (msg) ->
-		robot.pr0gramm(msg, true)
+		robot.pr0gramm(msg, "boobs")
 
 	robot.hear /(.+)/, (msg) ->
 		if robot.shouldPost
