@@ -1,1 +1,1 @@
-web: bin/hubot --adapter slack
+web: bin/hubot --name awesom-o --adapter slack
