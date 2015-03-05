@@ -1,6 +1,6 @@
 module.exports = (robot) ->
-	robot.fetchBabes = (msg) ->
-		api_url = "http://www.reddit.com/r/babes/new.json?sort=new"
+	robot.fetchBabes = (reddit, msg) ->
+		api_url = "http://www.reddit.com/r/#{reddit}/new.json?sort=new"
 
 		robot.http(api_url)
 		.get() (err, res, body) ->
@@ -13,4 +13,7 @@ module.exports = (robot) ->
 
 
 	robot.hear /b0rg/, (msg) ->
-		robot.fetchBabes(msg)
+		robot.fetchReddit("babes", msg)
+
+	robot.hear /randnsfw/, (msg) ->
+		robot.fetchReddit("randnsfw", msg)
