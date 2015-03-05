@@ -15,5 +15,5 @@ module.exports = (robot) ->
 	robot.hear /b0rg/, (msg) ->
 		robot.fetchReddit("babes", msg)
 
-	robot.hear /randnsfw/, (msg) ->
-		robot.fetchReddit("randnsfw", msg)
+	robot.hear /reddit:(.+)/, (msg) ->
+		robot.fetchReddit(msg.match[1], msg)
