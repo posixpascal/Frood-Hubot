@@ -17,8 +17,11 @@ module.exports = (robot) ->
 
 	robot.shouldPost = false
 
-	robot.hear /(pr0gramm)/, (msg) ->
-		robot.pr0gramm(msg)
+	robot.hear /pr0gramm[\:(.+)/|], (msg) ->
+		if msg.match.length > 0
+			robot.pr0gramm(msg, escape(msg.match[1]))
+		else
+			robot.pr0gramm(msg)
 
 	robot.hear /pr0gramm\:(.+)/, (msg) ->
 		robot.pr0gramm(msg,  escape(msg.match[1]))
