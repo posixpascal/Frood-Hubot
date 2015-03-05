@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-	robot.fetchBabes = (reddit, msg) ->
+	robot.fetchReddit = (reddit, msg) ->
 		api_url = "http://www.reddit.com/r/#{reddit}/new.json?sort=new"
 
 		robot.http(api_url)
