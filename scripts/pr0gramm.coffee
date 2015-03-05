@@ -5,6 +5,7 @@ module.exports = (robot) ->
 		pr0gramm_url = "http://pr0gramm.com/api/items/get?flags=1&promoted=1"
 		if tag
 			pr0gramm_url = pr0gramm_url + "&tags=#{tag}"
+
 		robot.http(pr0gramm_url)
 		.get() (err, res, body) ->
 			body = JSON.parse body
@@ -12,10 +13,16 @@ module.exports = (robot) ->
 			for item in body.items
 				if item.image.indexOf("webm") == -1
 					items.push item
-			r = msg.random items
-			msg.send "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
-			msg.shouldPost = false
-	robot.shouldPost = false
+			
+			if typeof msg === "string"
+				r = items[0]
+				robot.messageRoom msg, "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
+			
+			else
+				r = msg.random items
+				msg.send "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
+			
+
 
 	robot.hear /pr0gramm\:(.+)/, (msg) ->
 		if msg.match.length > 0
@@ -27,10 +34,6 @@ module.exports = (robot) ->
 	robot.hear /(borg)/, (msg) ->
 		robot.pr0gramm(msg, "boobs")
 
-	robot.hear /(.+)/, (msg) ->
-		if robot.shouldPost
-			robot.pr0gramm(msg)
-
 	setInterval () ->
-		robot.shouldPost = true
-	, 1000 * 60 * 10 
+		robot.pr0gramm("#random")
+	, 1000 * 60 * 30 
