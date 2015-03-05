@@ -2,13 +2,13 @@
 1 verbose cli [ 'node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'hubot-mustache',
+1 verbose cli   'hubot-catgif',
 1 verbose cli   '--save' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
 4 verbose readDependencies using package.json deps
-5 verbose cache add [ 'hubot-mustache', null ]
-6 verbose cache add name=undefined spec="hubot-mustache" args=["hubot-mustache",null]
+5 verbose cache add [ 'hubot-catgif', null ]
+6 verbose cache add name=undefined spec="hubot-catgif" args=["hubot-catgif",null]
 7 verbose parsed url { protocol: null,
 7 verbose parsed url   slashes: null,
 7 verbose parsed url   auth: null,
@@ -18,71 +18,46 @@
 7 verbose parsed url   hash: null,
 7 verbose parsed url   search: null,
 7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: 'hubot-mustache',
-7 verbose parsed url   path: 'hubot-mustache',
-7 verbose parsed url   href: 'hubot-mustache' }
-8 silly lockFile 7e2642bb-hubot-mustache hubot-mustache
-9 verbose lock hubot-mustache /Users/pascalraszyk/.npm/7e2642bb-hubot-mustache.lock
-10 silly lockFile 7e2642bb-hubot-mustache hubot-mustache
-11 silly lockFile 7e2642bb-hubot-mustache hubot-mustache
-12 verbose addNamed [ 'hubot-mustache', '' ]
+7 verbose parsed url   pathname: 'hubot-catgif',
+7 verbose parsed url   path: 'hubot-catgif',
+7 verbose parsed url   href: 'hubot-catgif' }
+8 silly lockFile 3714fe4b-hubot-catgif hubot-catgif
+9 verbose lock hubot-catgif /Users/pascalraszyk/.npm/3714fe4b-hubot-catgif.lock
+10 silly lockFile 3714fe4b-hubot-catgif hubot-catgif
+11 silly lockFile 3714fe4b-hubot-catgif hubot-catgif
+12 verbose addNamed [ 'hubot-catgif', '' ]
 13 verbose addNamed [ null, '*' ]
-14 silly lockFile a7422227-hubot-mustache hubot-mustache@
-15 verbose lock hubot-mustache@ /Users/pascalraszyk/.npm/a7422227-hubot-mustache.lock
-16 silly addNameRange { name: 'hubot-mustache', range: '*', hasData: false }
-17 verbose request where is /hubot-mustache
+14 silly lockFile 61577919-hubot-catgif hubot-catgif@
+15 verbose lock hubot-catgif@ /Users/pascalraszyk/.npm/61577919-hubot-catgif.lock
+16 silly addNameRange { name: 'hubot-catgif', range: '*', hasData: false }
+17 verbose request where is /hubot-catgif
 18 verbose request registry https://registry.npmjs.org/
-19 verbose request id 0ef4828f004475f1
-20 verbose url raw /hubot-mustache
-21 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-mustache' ]
-22 verbose url resolved https://registry.npmjs.org/hubot-mustache
-23 verbose request where is https://registry.npmjs.org/hubot-mustache
-24 info trying registry request attempt 1 at 16:50:18
-25 http GET https://registry.npmjs.org/hubot-mustache
-26 http 404 https://registry.npmjs.org/hubot-mustache
-27 verbose headers { date: 'Wed, 04 Mar 2015 15:50:18 GMT',
-27 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-27 verbose headers   'content-type': 'application/json',
-27 verbose headers   'cache-control': 'max-age=0',
-27 verbose headers   'content-length': '52',
-27 verbose headers   'accept-ranges': 'bytes',
-27 verbose headers   via: '1.1 varnish',
-27 verbose headers   age: '0',
-27 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
-27 verbose headers   'x-cache': 'MISS',
-27 verbose headers   'x-cache-hits': '0',
-27 verbose headers   'x-timer': 'S1425484218.519949,VS0,VE171',
-27 verbose headers   'keep-alive': 'timeout=10, max=50',
-27 verbose headers   connection: 'Keep-Alive' }
-28 silly registry.get cb [ 404,
-28 silly registry.get   { date: 'Wed, 04 Mar 2015 15:50:18 GMT',
-28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-28 silly registry.get     'content-type': 'application/json',
-28 silly registry.get     'cache-control': 'max-age=0',
-28 silly registry.get     'content-length': '52',
-28 silly registry.get     'accept-ranges': 'bytes',
-28 silly registry.get     via: '1.1 varnish',
-28 silly registry.get     age: '0',
-28 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
-28 silly registry.get     'x-cache': 'MISS',
-28 silly registry.get     'x-cache-hits': '0',
-28 silly registry.get     'x-timer': 'S1425484218.519949,VS0,VE171',
-28 silly registry.get     'keep-alive': 'timeout=10, max=50',
-28 silly registry.get     connection: 'Keep-Alive' } ]
-29 silly lockFile a7422227-hubot-mustache hubot-mustache@
-30 silly lockFile a7422227-hubot-mustache hubot-mustache@
-31 error 404 404 Not Found: hubot-mustache
-31 error 404
-31 error 404 'hubot-mustache' is not in the npm registry.
-31 error 404 You should bug the author to publish it
-31 error 404 It was specified as a dependency of 'Frooderp'
-31 error 404
-31 error 404 Note that you can also install from a
-31 error 404 tarball, folder, or http url, or git url.
-32 error System Darwin 14.3.0
-33 error command "node" "/usr/local/bin/npm" "install" "hubot-mustache" "--save"
-34 error cwd /Users/pascalraszyk/Projects/Kochapp/Hubot
-35 error node -v v0.10.33
-36 error npm -v 1.4.28
-37 error code E404
-38 verbose exit [ 1, true ]
+19 verbose request id 7d49f1636c754c78
+20 verbose url raw /hubot-catgif
+21 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-catgif' ]
+22 verbose url resolved https://registry.npmjs.org/hubot-catgif
+23 verbose request where is https://registry.npmjs.org/hubot-catgif
+24 info trying registry request attempt 1 at 09:33:25
+25 http GET https://registry.npmjs.org/hubot-catgif
+26 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect EHOSTUNREACH
+27 info trying registry request attempt 2 at 09:33:35
+28 http GET https://registry.npmjs.org/hubot-catgif
+29 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect EHOSTUNREACH
+30 info trying registry request attempt 3 at 09:34:35
+31 http GET https://registry.npmjs.org/hubot-catgif
+32 silly lockFile 61577919-hubot-catgif hubot-catgif@
+33 silly lockFile 61577919-hubot-catgif hubot-catgif@
+34 error network tunneling socket could not be established, cause=connect EHOSTUNREACH
+34 error network This is most likely not a problem with npm itself
+34 error network and is related to network connectivity.
+34 error network In most cases you are behind a proxy or have bad network settings.
+34 error network
+34 error network If you are behind a proxy, please make sure that the
+34 error network 'proxy' config is set properly.  See: 'npm help config'
+35 error System Darwin 14.3.0
+36 error command "node" "/usr/local/bin/npm" "install" "hubot-catgif" "--save"
+37 error cwd /Users/pascalraszyk/Projects/Kochapp/Hubot
+38 error node -v v0.10.33
+39 error npm -v 1.4.28
+40 error code ECONNRESET
+41 verbose exit [ 1, true ]
