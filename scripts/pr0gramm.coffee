@@ -8,7 +8,11 @@ module.exports = (robot) ->
 		robot.http(pr0gramm_url)
 		.get() (err, res, body) ->
 			body = JSON.parse body
-			r = msg.random body.items
+			items = []
+			for item in body.items
+				if item.image.indexOf("webm") === -1
+					items.push item
+			r = msg.random items
 			msg.send "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
 
 	robot.shouldPost = false
