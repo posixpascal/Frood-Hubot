@@ -6,11 +6,11 @@ module.exports = (robot) ->
 		.get() (err, res, body) ->
 			body = JSON.parse body
 			r = msg.random body.items
-			msg.send "#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
+			msg.send "http://pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
 
 	robot.shouldPost = false
 
-	robot.hear /(pr0gramm)/, (msg) ->
+	robot.hear /(pr0gramm|borg)/, (msg) ->
 		robot.pr0gramm(msg)
 
 	robot.hear /(.+)/, (msg) ->
