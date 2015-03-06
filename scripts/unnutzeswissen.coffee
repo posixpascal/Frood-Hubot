@@ -7,6 +7,7 @@ module.exports = (robot) ->
 			$ = cheerio.load(body)
 			articles = $("article.post")
 			$article = articles.eq(Math.round( (articles.length - 1) * Math.random()) )
+			console.log $article
 			data = 
 				image: $article.find(".wp-post-image").attr("src")
 				message: $article.find(".wp-post-image").attr("alt")
