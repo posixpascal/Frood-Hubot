@@ -3,7 +3,7 @@ cheerio = require 'cheerio'
 module.exports = (robot) ->
 	robot.unnuetz = (channel) ->
 		robot.http('http://www.unnutzes.com/wissen/')
-		.get(err, res, body) ->
+		.get() (err, res, body) ->
 			$ = cheerio.load(body)
 			articles = $("article.post")
 			article = articles.eq(Math.round( (articles.length - 1) * Math.random()))
