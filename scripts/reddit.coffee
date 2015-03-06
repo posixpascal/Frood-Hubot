@@ -12,7 +12,7 @@ module.exports = (robot) ->
 			msg.send "#{item.title} - (#{item.url}) - ups: #{item.ups} - downs: #{item.downs}"
 
 
-	robot.hear /b0rg/, (msg) ->
+	robot.hear /b0rg/i, (msg) ->
 		robot.fetchReddit("babes", msg)
 
 	robot.hear /reddit:(.+)/, (msg) ->

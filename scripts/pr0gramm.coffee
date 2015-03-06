@@ -24,14 +24,14 @@ module.exports = (robot) ->
 			
 
 
-	robot.hear /pr0gramm\:(.+)/, (msg) ->
+	robot.hear /pr0gramm\:(.+)i/, (msg) ->
 		if msg.match.length > 0
 			robot.pr0gramm(msg, escape(msg.match[1]))
 		else
 			robot.pr0gramm(msg)
 
 
-	robot.hear /(borg)/, (msg) ->
+	robot.hear /(borg)/i, (msg) ->
 		robot.pr0gramm(msg, "boobs")
 
 	setInterval () ->

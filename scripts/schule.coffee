@@ -10,7 +10,7 @@ module.exports = (robot) ->
     "http://i.imgur.com/Fqe8k.gif",
   ]
 
-  robot.hear /(ineger|intger|inteegr)/, (msg) ->
+  robot.hear /(ineger|intger|inteegr)/i, (msg) ->
     msg.send "Fuck it Oho."
   
   robot.hear /(jaeckel|buhl|sommerfeld)/i, (msg) ->
