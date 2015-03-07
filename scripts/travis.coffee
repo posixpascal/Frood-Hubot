@@ -15,7 +15,7 @@ module.exports = (robot) ->
 			url: body.build_url
 			status: body.status_message
 
-		t = JSON.parse(robot.brain.get "travis")
+		t = JSON.parse(robot.brain.get("travis"))
 		if typeof t[author_name] == "undefined"
 			t[author_name] =
 				name: travis.author_name
@@ -28,10 +28,11 @@ module.exports = (robot) ->
 			robot.messageRoom "#general", "#{travis.author_name} hat insgesamt #{user.failedBuilds}x nicht delivered. (Gib den anderen mal ein Bier aus.)"
 
 		robot.brain.set("travis", JSON.stringify(t))
+		robot.brain.save()
 
 
 	robot.hear /build:stats/i, (msg) ->
-		@users = JSON.parse(robot.brain.get "travis")
+		@users = JSON.parse(robot.brain.get("travis"))
 		max = 0
 		topUsers = []
 		for user of @users
