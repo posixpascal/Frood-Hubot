@@ -34,7 +34,7 @@ module.exports = (robot) ->
 		@users = JSON.parse(robot.brain.get "travis")
 		max = 0
 		topUsers = []
-		for key, user of @users
+		for user of @users
 			if user.failed > max
 				max = user.failed
 				topUsers = []
