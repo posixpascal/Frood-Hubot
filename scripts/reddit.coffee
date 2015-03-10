@@ -13,7 +13,7 @@ module.exports = (robot) ->
 
 
 	robot.hear /b0rg/i, (msg) ->
-		robot.fetchReddit("babes", msg)
+		robot.fetchReddit("granny", msg)
 
 	robot.hear /reddit:(.+)/, (msg) ->
 		robot.fetchReddit(msg.match[1], msg)
