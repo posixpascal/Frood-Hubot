@@ -31,8 +31,10 @@ module.exports = (robot) ->
 			robot.pr0gramm(msg)
 
 
-	robot.hear /(borg)/i, (msg) ->
-		robot.pr0gramm(msg, "babe")
+
+	robot.hear /(arbeit)/i, (msg) ->
+		robot.pr0gramm(msg, "boobs")
+
 
 	setInterval () ->
 		robot.pr0gramm("#random")

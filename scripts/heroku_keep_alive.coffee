@@ -5,6 +5,7 @@
 
 module.exports = (robot) ->
 	servers = [
+		"borgbot.herokuapp.com"
 
 	]
 
