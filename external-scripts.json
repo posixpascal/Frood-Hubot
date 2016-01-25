@@ -1,3 +1,23 @@
 [
-  "hubot-heroku-keepalive"
+  "hubot-diagnostics",
+  "hubot-help",
+  "hubot-heroku-keepalive",
+  "hubot-google-images",
+  "hubot-google-translate",
+  "hubot-pugme",
+  "hubot-victory",
+  "hubot-rules",
+  "hubot-shipit",
+  "hubot-youtube",
+  "hubot-whatthecommit",
+  "hubot-dinner",
+  "hubot-caniuse",
+  "hubot-catgif",
+  "hubot-computerdogs",
+  "hubot-tell",
+  "hubot-xkcd-image",
+  "hubot-javascript",
+  "hubot-catgif",
+  "hubot-pokedex",
+  "hubot-codinglove"
 ]

@@ -32,7 +32,7 @@ module.exports = (robot) ->
 
 
 
-	robot.hear /(arbeit)/i, (msg) ->
+	robot.hear /(b0rg)/i, (msg) ->
 		robot.pr0gramm(msg, "boobs")
 
 

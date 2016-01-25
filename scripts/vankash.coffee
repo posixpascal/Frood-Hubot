@@ -388,4 +388,4 @@ module.exports = (robot) ->
   ]
 
   robot.hear /(nahom|vankash)/i, (msg) ->
-    msg.send "Hey @vankash, #{msg.random(greetings)} #{atob(msg.random(urls))}""
+    msg.send "Hey @vankash, #{msg.random(greetings)} #{atob(msg.random(urls))}"
