@@ -13,15 +13,15 @@ module.exports = (robot) ->
 			for item in body.items
 				if item.image.indexOf("webm") == -1
 					items.push item
-			
+
 			if typeof msg == "string"
 				r = items[0]
 				robot.messageRoom msg, "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
-			
+
 			else
 				r = msg.random items
 				msg.send "http://img.pr0gramm.com/#{r.image} (up: #{r.up} - down: #{r.down} - by: #{r.user})"
-			
+
 
 
 	robot.hear /pr0gramm\:(.+)i/, (msg) ->
@@ -31,9 +31,11 @@ module.exports = (robot) ->
 			robot.pr0gramm(msg)
 
 
+
 	robot.hear /(arbeit)/i, (msg) ->
 		robot.pr0gramm(msg, "boobs")
 
+
 	setInterval () ->
 		robot.pr0gramm("#random")
-	, 1000 * 60 * 30 
+	, 1000 * 60 * 30
