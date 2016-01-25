@@ -31,7 +31,7 @@ module.exports = (robot) ->
 			robot.pr0gramm(msg)
 
 
-	robot.hear /(borg)/i, (msg) ->
+	robot.hear /(arbeit)/i, (msg) ->
 		robot.pr0gramm(msg, "boobs")
 
 	setInterval () ->
