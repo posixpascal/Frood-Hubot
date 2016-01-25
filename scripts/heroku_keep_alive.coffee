@@ -7,7 +7,8 @@ module.exports = (robot) ->
 	servers = [
 		"http://datoni-camberg.de",
 		"http://pascalraszyk.de",
-		"http://datoni-api.herokuapp.com"
+		"http://datoni-api.herokuapp.com",
+		"borgbot.herokuapp.com"
 	]
 
 	setInterval ->
