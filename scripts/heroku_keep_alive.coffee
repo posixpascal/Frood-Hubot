@@ -5,9 +5,7 @@
 
 module.exports = (robot) ->
 	servers = [
-		"http://datoni-camberg.de",
-		"http://pascalraszyk.de",
-		"http://datoni-api.herokuapp.com"
+
 	]
 
 	setInterval ->
@@ -15,5 +13,5 @@ module.exports = (robot) ->
 			robot.http(server)
 			.get() (u,se,less) ->
 				console.log("Woke #{server}.")
-				
+
 	, 60 * 1000 * 55

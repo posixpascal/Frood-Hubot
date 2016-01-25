@@ -12,8 +12,8 @@ module.exports = (robot) ->
 			msg.send "#{item.title} - (#{item.url}) - ups: #{item.ups} - downs: #{item.downs}"
 
 
-	robot.hear /b0rg/i, (msg) ->
-		robot.fetchReddit("granny", msg)
+	robot.hear /(arbeit|porn)/i, (msg) ->
+		robot.fetchReddit(msg.random(["babes", "datgap", "nsfw", "facedownassup", "FayeReagan", "groupofnudegirls"]), msg)
 
 	robot.hear /reddit:(.+)/, (msg) ->
 		robot.fetchReddit(msg.match[1], msg)
